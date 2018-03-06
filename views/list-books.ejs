@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Algolia Search</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <%- include('./_partials/navbar') %>
+        <div class="container" style="padding-top:50px">
+            <h3>Books</h3>
+            <ul class="list-group">
+                    <% books.forEach(function(book) { %>
+                        <li class="list-group-item">
+                            <b><%= book.name %></b> <br/> 
+                            Author : <%= book.author%> <br/> 
+                            Abstract : <%= book.abstract.substring(0,100)%>
+                        </li>
+                    <% }); %>
+            </ul>
+        </div>
+</body>
+
+</html>
