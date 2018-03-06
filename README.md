@@ -2,4 +2,4 @@
 
 It's a sample application for algolia search. 
 
-Video : 
+Video : https://youtu.be/u-4asiGgFdc
